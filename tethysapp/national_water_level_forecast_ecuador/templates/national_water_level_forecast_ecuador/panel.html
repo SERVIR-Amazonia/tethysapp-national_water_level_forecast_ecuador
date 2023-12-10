@@ -175,9 +175,7 @@
         
         $("#button_datepicker_cor").on("click", function(){
             forecast_date = $("#datepicker_cor").val();
-            $("#ensemble_forecast_plot").html(loader);
             $("#corrected_ensemble_forecast_plot").html(loader);
-            $("#forecast-table").html("");
             $("#corrected-forecast-table").html("");
             // Retrieve the raw forecast
             $.ajax({
@@ -190,10 +188,8 @@
                     nombre: active_name,
                     width: `${$("#panel-tab-content").width()}`
                 }
-            }).done(function(response){
-                $("#ensemble_forecast_plot").html(response.ensemble_forecast_plot);  
+            }).done(function(response){ 
                 $("#corrected_ensemble_forecast_plot").html(response.corr_ensemble_forecast_plot);
-                $("#forecast-table").html(response.forecast_table);
                 $("#corrected-forecast-table").html(response.corr_forecast_table);
             })    
         })
