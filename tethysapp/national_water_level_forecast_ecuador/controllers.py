@@ -23,7 +23,7 @@ from .app import NationalWaterLevelForecastEcuador as app
 from .models.data import *
 from .models.plots import *
 
-
+import requests
 
 ####################################################################################################
 ##                                       STATUS VARIABLES                                         ##
