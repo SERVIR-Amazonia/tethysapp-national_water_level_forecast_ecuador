@@ -30,7 +30,7 @@ let loc = [
     { name: "Tungurahua", file:"tungurahua.geojson"},
     { name: "Zamora Chinchipe", file:"zamora_chinchipe.geojson"},
 ];
-const loc_url = `${server}/static/historical_validation_tool_ecuador/geojson/loc/`
+const loc_url = `${server}/static/national_water_level_forecast_ecuador/geojson/loc/`
 
 
 // River basin districts
@@ -46,7 +46,7 @@ let basin = [
     { name: "Demarcación Puyango-Catamayo", file:"puyango_catamayo.geojson"},
     { name: "Demarcación Santiago", file:"santiago.geojson"},
 ];
-const basin_url = `${server}/static/historical_validation_tool_ecuador/geojson/basin/`
+const basin_url = `${server}/static/national_water_level_forecast_ecuador/geojson/basin/`
 
 
 
